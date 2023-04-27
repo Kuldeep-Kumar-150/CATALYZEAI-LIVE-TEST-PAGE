@@ -176,10 +176,9 @@ body {
   top: 90px;
   background: rgb(255, 255, 255);
   z-index: 10 !important;
-  height: 100vh;
+  height: 90vh;
   transition: 0.3s linear;
   width: 100%;
-  padding-top: 100px !important;
   z-index: 20 !important;
 }
 
@@ -189,10 +188,9 @@ body {
   top: 90px;
   background: rgb(255, 255, 255);
   z-index: 10 !important;
-  height: 100vh;
+  height: 90vh;
   transition: 0.3s linear;
   width: 100%;
-  padding-top: 100px !important;
   z-index: 20 !important;
 }
 
@@ -266,7 +264,7 @@ body {
 .real_estate_btn::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   height: 16px;
@@ -282,10 +280,16 @@ body {
 }
 
 .submit_btn {
-  padding-top: 13px !important;
-  padding-bottom: 13px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
   margin-top: 6px !important;
   border-radius: 4px;
+  border: 1px solid #1AD079;
+  color: white !important;
+  transition: 0.3s ease-in-out;
+}
+.submit_btn:hover{
+  background-color: #00ff84;
 }
 
 .horizontel_line_footer {
@@ -560,6 +564,14 @@ body {
 .footer_links ul li a:hover:after {
   width: 100%;
   transform: translateX(-50%);
+}
+
+.learn_btn_arrow {
+  transition: 0.3s ease-in-out;
+}
+
+.learn_btn:hover .learn_btn_arrow {
+  transform: translateX(10px);
 }
 
 @media (min-width:576px) {

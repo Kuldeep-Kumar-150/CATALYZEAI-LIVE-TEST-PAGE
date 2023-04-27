@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import pageLogo from '../assets/img/svg/footer_logo.svg'
 const Contact = () => {
     return (
-        <section className='bg_darkblue py-5 position-relative rounded-3'>
+        <section className='bg_darkblue py-5 position-relative rounded-3 overflow-hidden'>
             <Container className=' custom_container mx-auto'>
                 <div className="footer_bg_elips d-none d-lg-flex"></div>
                 <div className="footer_bg_elips_2 d-none d-lg-flex"></div>
@@ -14,11 +14,11 @@ const Contact = () => {
                                 <input className='name_input fs_sm fw-semibold w-100' type="text" placeholder='Name' />
                                 <input className='mt-2 name_input fs_sm fw-semibold w-100' type="email" placeholder='Email' />
                                 <Row>
-                                    <Col lg={6} className='d-flex align-items-center'>
-                                        <button className='w-100 mt-2 text_green fs_sm fw-semibold financial_services_btn  position-relative bg-transparent text-nowrap me-lg-1'>Financial Service</button>
+                                    <Col lg={6} className='d-flex align-items-center pe-lg-1'>
+                                        <button className='w-100 mt-2 text_green fs_sm fw-semibold financial_services_btn  position-relative bg-transparent text-nowrap me-xl-1 ps-lg-4'>Financial Service</button>
                                     </Col>
-                                    <Col lg={6} className='d-flex align-items-center'>
-                                        <button className='w-110 mt-2 text_green fs_sm fw-semibold real_estate_btn position-relative bg-transparent text-nowrap ms-lg-1'>Real Estate</button>
+                                    <Col lg={6} className='d-flex align-items-center ps-lg-1'>
+                                        <button className='w-110 mt-2 text_green fs_sm fw-semibold real_estate_btn position-relative bg-transparent text-nowrap ms-xl-1'>Real Estate</button>
                                     </Col>
                                 </Row>
                             </Col>

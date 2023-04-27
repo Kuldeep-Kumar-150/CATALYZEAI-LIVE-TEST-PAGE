@@ -5,6 +5,7 @@ import profileIcon from '../assets/img/svg/profile_icon.svg'
 import threeDot from '../assets/img/svg/three_dot.svg'
 import arrow from '../assets/img/svg/down_arrow.svg'
 import activLead from '../assets/img/svg/active_lead.svg'
+import arroww from '../assets/img/svg/btns_arrow.svg'
 const Header = () => {
     return (
         <section className='py-5 position-relative overflow-hidden'>
@@ -131,11 +132,9 @@ const Header = () => {
                                         <p className='fs_sm fw-semibold text_lightgreen'>boost your</p>
                                         <h2 className='fs_md fw-semibold text-white'>Financial <span className='d-lg-block'>Services</span></h2>
                                     </div>
-                                    <div className="d-flex align-items-center justify-content-between crusor_pointer mt-4 pt-1">
+                                    <div className=" learn_btn d-flex align-items-center justify-content-between crusor_pointer mt-4 pt-1">
                                         <a className='fs_sm fw-semibold text-white' href="#">Learn more</a>
-                                        <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M25.5303 6.59094C25.8232 6.29804 25.8232 5.82317 25.5303 5.53028L20.7574 0.757307C20.4645 0.464414 19.9896 0.464414 19.6967 0.757307C19.4038 1.0502 19.4038 1.52507 19.6967 1.81797L23.9393 6.06061L19.6967 10.3032C19.4038 10.5961 19.4038 11.071 19.6967 11.3639C19.9896 11.6568 20.4645 11.6568 20.7574 11.3639L25.5303 6.59094ZM0 6.81061H25V5.31061H0V6.81061Z" fill="white" />
-                                        </svg>
+                                        <img className='learn_btn_arrow' src={arroww} alt="arrow" />
                                     </div>
                                 </div>
                             </Col>
@@ -145,11 +144,9 @@ const Header = () => {
                                         <p className='fs_sm fw-semibold text_lightgrey'>boost your</p>
                                         <h2 className='fs_md fw-semibold text-white pt-2'>Real Estate</h2>
                                     </div>
-                                    <div className="d-flex align-items-center justify-content-between crusor_pointer mt-4 pt-1">
+                                    <div className=" learn_btn d-flex align-items-center justify-content-between crusor_pointer mt-4 pt-1">
                                         <a className='fs_sm fw-semibold text-white' href="#">Learn more</a>
-                                        <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M25.5303 6.59094C25.8232 6.29804 25.8232 5.82317 25.5303 5.53028L20.7574 0.757307C20.4645 0.464414 19.9896 0.464414 19.6967 0.757307C19.4038 1.0502 19.4038 1.52507 19.6967 1.81797L23.9393 6.06061L19.6967 10.3032C19.4038 10.5961 19.4038 11.071 19.6967 11.3639C19.9896 11.6568 20.4645 11.6568 20.7574 11.3639L25.5303 6.59094ZM0 6.81061H25V5.31061H0V6.81061Z" fill="white" />
-                                        </svg>
+                                        <img className='learn_btn_arrow' src={arroww} alt="arrow" />
                                     </div>
                                 </div>
                             </Col>
