@@ -53,7 +53,6 @@
 }
 
 body {
-  margin: 15px !important;
   background: #FFFFFF !important;
 }
 
@@ -95,6 +94,7 @@ body {
   padding: 13px !important;
   background-color: #141F45;
   color: #B8BCC7 !important;
+  border-radius: 5px;
 }
 
 .msg_textarea {
@@ -104,6 +104,7 @@ body {
   background-color: #141F45;
   padding: 10px !important;
   color: #B8BCC7 !important;
+  border-radius: 5px;
 }
 
 .sign_up_btn {
@@ -288,7 +289,8 @@ body {
   color: white !important;
   transition: 0.3s ease-in-out;
 }
-.submit_btn:hover{
+
+.submit_btn:hover {
   background-color: #00ff84;
 }
 

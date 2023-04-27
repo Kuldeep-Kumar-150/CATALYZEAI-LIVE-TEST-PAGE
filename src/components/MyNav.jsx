@@ -13,7 +13,7 @@ const MyNav = () => {
         document.body.style.overflow = "visible";
     }
     return (
-        <section className='bg-white py-4'>
+        <section className='bg-white py-4 mx-3'>
             <Container className='custom_container mx-auto'>
                 <nav className='d-flex align-items-center justify-content-between'>
                     <div className='d-flex align-items-center'>

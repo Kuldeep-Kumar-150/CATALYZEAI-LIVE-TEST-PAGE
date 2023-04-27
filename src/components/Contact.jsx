@@ -3,30 +3,42 @@ import { Col, Container, Row } from 'react-bootstrap'
 import pageLogo from '../assets/img/svg/footer_logo.svg'
 const Contact = () => {
     const [btns, setBtns] = useState(1)
+    const formValue = { name: "", email: "", message: "" }
+    const [myValue, setMyValue] = useState(formValue)
+    const valueChange = (e) => {
+        const { name, value } = e.target;
+        setMyValue({ ...myValue, [name]: value });
+    }
+    const formsubmit = (k) => {
+        k.preventDefault();
+        setMyValue(formValue)
+    }
     return (
-        <section className='bg_darkblue py-5 position-relative rounded-3 overflow-hidden'>
+        <section className='bg_darkblue py-5 position-relative rounded-3 overflow-hidden m-3'>
             <Container className=' custom_container mx-auto'>
                 <div className="footer_bg_elips d-none d-lg-flex"></div>
                 <div className="footer_bg_elips_2 d-none d-lg-flex"></div>
                 <Row className='mb-5'>
                     <Col lg={7}>
                         <Row>
-                            <Col lg={7} className='p-3 p-lg-0'>
-                                <input className='name_input fs_sm fw-semibold w-100' type="text" placeholder='Name' />
-                                <input className='mt-2 name_input fs_sm fw-semibold w-100' type="email" placeholder='Email' />
-                                <Row>
-                                    <Col lg={6} className='d-flex align-items-center pe-lg-1'>
-                                        <button className='w-100 mt-2 text_green fs_sm fw-semibold financial_services_btn  position-relative bg-transparent text-nowrap me-xl-1 ps-lg-4'>Financial Service</button>
-                                    </Col>
-                                    <Col lg={6} className='d-flex align-items-center ps-lg-1'>
-                                        <button className='w-110 mt-2 text_green fs_sm fw-semibold real_estate_btn position-relative bg-transparent text-nowrap ms-xl-1'>Real Estate</button>
-                                    </Col>
-                                </Row>
-                            </Col>
-                            <Col lg={5} className='px-3 px-lg-0 z_index_5'>
-                                <textarea className='msg_textarea w-100 fs_sm fw-semibold ms-lg-3' placeholder='Message..' cols="30" rows="10"></textarea>
-                                <button className='bg_green border-0 w-100 submit_btn ms-lg-3'>Submit</button>
-                            </Col>
+                            <form className='row' onSubmit={formsubmit}>
+                                <Col lg={7} className='p-3 p-lg-0'>
+                                    <input className='name_input fs_sm fw-semibold w-100' name='name' type="text" placeholder='Name' value={myValue.name} onChange={valueChange} />
+                                    <input className='mt-2 name_input fs_sm fw-semibold w-100' name='email' type="email" placeholder='Email' value={myValue.email} onChange={valueChange} />
+                                    <Row>
+                                        <Col lg={6} className='d-flex align-items-center pe-lg-1'>
+                                            <button className='w-100 mt-2 text_green fs_sm fw-semibold financial_services_btn  position-relative bg-transparent text-nowrap me-xl-1 ps-lg-4'>Financial Service</button>
+                                        </Col>
+                                        <Col lg={6} className='d-flex align-items-center ps-lg-1'>
+                                            <button className='w-110 mt-2 text_green fs_sm fw-semibold real_estate_btn position-relative bg-transparent text-nowrap ms-xl-1'>Real Estate</button>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                                <Col lg={5} className='px-3 px-lg-0 z_index_5'>
+                                    <textarea className='msg_textarea w-100 fs_sm fw-semibold ms-lg-3' name='message' onChange={valueChange} value={myValue.message} placeholder='Message..' cols="30" rows="10"></textarea>
+                                    <button className='bg_green border-0 w-100 submit_btn ms-lg-3'>Submit</button>
+                                </Col>
+                            </form>
                         </Row>
                     </Col>
                     <Col lg={5} className='px-3 mt-4 ps-lg-5 z_index_5'>
