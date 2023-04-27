@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import pageLogo from '../assets/img/svg/footer_logo.svg'
 const Contact = () => {
+    const [btns, setBtns] = useState(1)
     return (
         <section className='bg_darkblue py-5 position-relative rounded-3 overflow-hidden'>
             <Container className=' custom_container mx-auto'>

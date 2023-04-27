@@ -396,7 +396,7 @@ body {
   position: absolute;
   left: -3%;
   top: 132%;
-  animation: card_3 linear 17s infinite;
+  animation: card_3 linear 38s infinite;
 }
 
 @keyframes card_3 {
